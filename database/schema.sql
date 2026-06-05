@@ -3,6 +3,31 @@
 -- Enable UUID extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+-- Clean existing schema if re-deploying
+DROP TABLE IF EXISTS activity_logs CASCADE;
+DROP TABLE IF EXISTS digital_id_cards CASCADE;
+DROP TABLE IF EXISTS placement_applications CASCADE;
+DROP TABLE IF EXISTS placements CASCADE;
+DROP TABLE IF EXISTS certificates CASCADE;
+DROP TABLE IF EXISTS event_registrations CASCADE;
+DROP TABLE IF EXISTS events CASCADE;
+DROP TABLE IF EXISTS study_materials CASCADE;
+DROP TABLE IF EXISTS announcements CASCADE;
+DROP TABLE IF EXISTS leave_requests CASCADE;
+DROP TABLE IF EXISTS marks CASCADE;
+DROP TABLE IF EXISTS attendance CASCADE;
+DROP TABLE IF EXISTS subjects CASCADE;
+DROP TABLE IF EXISTS placement_officers CASCADE;
+DROP TABLE IF EXISTS students CASCADE;
+DROP TABLE IF EXISTS faculty CASCADE;
+DROP TABLE IF EXISTS departments CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+
+DROP TYPE IF EXISTS user_role CASCADE;
+DROP TYPE IF EXISTS attendance_status CASCADE;
+DROP TYPE IF EXISTS leave_status CASCADE;
+DROP TYPE IF EXISTS event_type CASCADE;
+
 -- Define Enums
 CREATE TYPE user_role AS ENUM ('student', 'faculty', 'hod', 'admin', 'placement_officer');
 CREATE TYPE attendance_status AS ENUM ('present', 'absent', 'late');
