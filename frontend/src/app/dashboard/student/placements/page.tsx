@@ -23,11 +23,11 @@ export default function StudentPlacementsPage() {
     } catch (err) {
       toast('Failed to load placements. Showing demo board.', 'warning');
       setPlacements([
-        { id: 'pl0e0a0e-0000-0000-0000-000000000001', company_name: 'Stripe', role: 'Software Engineer (Frontend/Fullstack)', package: '$120,000 / Year', eligibility: 'Minimum CGPA 8.0, CSE/ECE', deadline: '2026-06-18T12:00:00.000Z' },
-        { id: 'pl0e0a0e-0000-0000-0000-000000000002', company_name: 'Tesla', role: 'Embedded Systems Intern', package: '$45 / Hour', eligibility: 'ECE/EEE, basic C++', deadline: '2026-06-25T18:00:00.000Z' }
+        { id: 'ba00a0e0-0000-0000-0000-000000000001', company_name: 'Stripe', role: 'Software Engineer (Frontend/Fullstack)', package: '$120,000 / Year', eligibility: 'Minimum CGPA 8.0, CSE/ECE', deadline: '2026-06-18T12:00:00.000Z' },
+        { id: 'ba00a0e0-0000-0000-0000-000000000002', company_name: 'Tesla', role: 'Embedded Systems Intern', package: '$45 / Hour', eligibility: 'ECE/EEE, basic C++', deadline: '2026-06-25T18:00:00.000Z' }
       ]);
       setApplications([
-        { id: 'app1', placement_id: 'pl0e0a0e-0000-0000-0000-000000000001', company_name: 'Stripe', role: 'Software Engineer', package: '$120,000 / Year', status: 'shortlisted', resume_url: '#', applied_at: new Date().toISOString() }
+        { id: 'app1', placement_id: 'ba00a0e0-0000-0000-0000-000000000001', company_name: 'Stripe', role: 'Software Engineer', package: '$120,000 / Year', status: 'shortlisted', resume_url: '#', applied_at: new Date().toISOString() }
       ]);
     } finally {
       setLoading(false);

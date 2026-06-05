@@ -41,8 +41,8 @@ export default function FacultyDashboard() {
             pendingLeavesCount: 1
           },
           subjects: [
-            { id: 'sub0e0a0-0000-0000-0000-000000000001', name: 'Data Structures & Algorithms', code: 'CS301' },
-            { id: 'sub0e0a0-0000-0000-0000-000000000002', name: 'Database Management Systems', code: 'CS302' }
+            { id: 'cb00a0e0-0000-0000-0000-000000000001', name: 'Data Structures & Algorithms', code: 'CS301' },
+            { id: 'cb00a0e0-0000-0000-0000-000000000002', name: 'Database Management Systems', code: 'CS302' }
           ],
           pendingLeaves: [
             { id: '1', student_name: 'Alice Johnson', roll_number: 'CS23B1001', reason: 'Family wedding attendance.', from_date: '2026-06-10', to_date: '2026-06-12', status: 'pending' }

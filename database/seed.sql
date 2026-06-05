@@ -49,74 +49,74 @@ UPDATE departments SET hod_id = 'f0e0a0e0-0000-0000-0000-000000000002' WHERE cod
 
 -- 4. Insert Placement Officer Profile
 INSERT INTO placement_officers (id, user_id, name, phone) VALUES
-('p0e0a0e0-0000-0000-0000-000000000001', 'a0e0a0e0-0000-0000-0000-000000000002', 'Mr. Richard Branson', '+15550199');
+('b0e0a0e0-0000-0000-0000-000000000001', 'a0e0a0e0-0000-0000-0000-000000000002', 'Mr. Richard Branson', '+15550199');
 
 -- 5. Insert Students
 INSERT INTO students (id, user_id, roll_number, name, phone, department_id, year, section, profile_image) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'a0e0a0e0-0000-0000-0000-000000000010', 'CS23B1001', 'Alice Johnson', '+15550101', 'd0e0a0e0-0000-0000-0000-000000000001', 3, 'A', 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alice'),
-('s0e0a0e0-0000-0000-0000-000000000002', 'a0e0a0e0-0000-0000-0000-000000000011', 'CS23B1002', 'Bob Smith', '+15550102', 'd0e0a0e0-0000-0000-0000-000000000001', 3, 'A', 'https://api.dicebear.com/7.x/avataaars/svg?seed=Bob'),
-('s0e0a0e0-0000-0000-0000-000000000003', 'a0e0a0e0-0000-0000-0000-000000000012', 'EC23B2001', 'Charlie Brown', '+15550103', 'd0e0a0e0-0000-0000-0000-000000000002', 3, 'B', 'https://api.dicebear.com/7.x/avataaars/svg?seed=Charlie');
+('c0e0a0e0-0000-0000-0000-000000000001', 'a0e0a0e0-0000-0000-0000-000000000010', 'CS23B1001', 'Alice Johnson', '+15550101', 'd0e0a0e0-0000-0000-0000-000000000001', 3, 'A', 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alice'),
+('c0e0a0e0-0000-0000-0000-000000000002', 'a0e0a0e0-0000-0000-0000-000000000011', 'CS23B1002', 'Bob Smith', '+15550102', 'd0e0a0e0-0000-0000-0000-000000000001', 3, 'A', 'https://api.dicebear.com/7.x/avataaars/svg?seed=Bob'),
+('c0e0a0e0-0000-0000-0000-000000000003', 'a0e0a0e0-0000-0000-0000-000000000012', 'EC23B2001', 'Charlie Brown', '+15550103', 'd0e0a0e0-0000-0000-0000-000000000002', 3, 'B', 'https://api.dicebear.com/7.x/avataaars/svg?seed=Charlie');
 
 -- 6. Insert Subjects
 INSERT INTO subjects (id, name, code, department_id, faculty_id) VALUES 
-('sub0e0a0-0000-0000-0000-000000000001', 'Data Structures & Algorithms', 'CS301', 'd0e0a0e0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000003'),
-('sub0e0a0-0000-0000-0000-000000000002', 'Database Management Systems', 'CS302', 'd0e0a0e0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000004'),
-('sub0e0a0-0000-0000-0000-000000000003', 'Digital Signal Processing', 'EC301', 'd0e0a0e0-0000-0000-0000-000000000002', 'f0e0a0e0-0000-0000-0000-000000000005');
+('cb00a0e0-0000-0000-0000-000000000001', 'Data Structures & Algorithms', 'CS301', 'd0e0a0e0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000003'),
+('cb00a0e0-0000-0000-0000-000000000002', 'Database Management Systems', 'CS302', 'd0e0a0e0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000004'),
+('cb00a0e0-0000-0000-0000-000000000003', 'Digital Signal Processing', 'EC301', 'd0e0a0e0-0000-0000-0000-000000000002', 'f0e0a0e0-0000-0000-0000-000000000005');
 
 -- 7. Insert Attendance Records
 -- Student 1 (Alice) DSA
 INSERT INTO attendance (student_id, subject_id, attendance_date, status) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-01', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-02', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-03', 'absent'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-04', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-05', 'present');
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-01', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-02', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-03', 'absent'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-04', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-05', 'present');
 
 -- Student 1 (Alice) DBMS
 INSERT INTO attendance (student_id, subject_id, attendance_date, status) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000002', '2026-06-01', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000002', '2026-06-02', 'late'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000002', '2026-06-03', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000002', '2026-06-04', 'present');
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000002', '2026-06-01', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000002', '2026-06-02', 'late'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000002', '2026-06-03', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000002', '2026-06-04', 'present');
 
 -- Student 2 (Bob) DSA
 INSERT INTO attendance (student_id, subject_id, attendance_date, status) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000002', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-01', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000002', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-02', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000002', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-03', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000002', 'sub0e0a0-0000-0000-0000-000000000001', '2026-06-04', 'present');
+('c0e0a0e0-0000-0000-0000-000000000002', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-01', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000002', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-02', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000002', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-03', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000002', 'cb00a0e0-0000-0000-0000-000000000001', '2026-06-04', 'present');
 
 -- Student 3 (Charlie) DSP
 INSERT INTO attendance (student_id, subject_id, attendance_date, status) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000003', 'sub0e0a0-0000-0000-0000-000000000003', '2026-06-01', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000003', 'sub0e0a0-0000-0000-0000-000000000003', '2026-06-02', 'absent'),
-('s0e0a0e0-0000-0000-0000-000000000003', 'sub0e0a0-0000-0000-0000-000000000003', '2026-06-03', 'present'),
-('s0e0a0e0-0000-0000-0000-000000000003', 'sub0e0a0-0000-0000-0000-000000000003', '2026-06-04', 'present');
+('c0e0a0e0-0000-0000-0000-000000000003', 'cb00a0e0-0000-0000-0000-000000000003', '2026-06-01', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000003', 'cb00a0e0-0000-0000-0000-000000000003', '2026-06-02', 'absent'),
+('c0e0a0e0-0000-0000-0000-000000000003', 'cb00a0e0-0000-0000-0000-000000000003', '2026-06-03', 'present'),
+('c0e0a0e0-0000-0000-0000-000000000003', 'cb00a0e0-0000-0000-0000-000000000003', '2026-06-04', 'present');
 
 -- 8. Insert Marks Records
 -- Alice DSA
 INSERT INTO marks (student_id, subject_id, exam_type, marks, total_marks) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', 'Internal 1', 22.5, 25),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', 'Internal 2', 21.0, 25),
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000001', 'Semester', 88.0, 100);
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', 'Internal 1', 22.5, 25),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', 'Internal 2', 21.0, 25),
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000001', 'Semester', 88.0, 100);
 
 -- Alice DBMS
 INSERT INTO marks (student_id, subject_id, exam_type, marks, total_marks) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'sub0e0a0-0000-0000-0000-000000000002', 'Internal 1', 19.5, 25);
+('c0e0a0e0-0000-0000-0000-000000000001', 'cb00a0e0-0000-0000-0000-000000000002', 'Internal 1', 19.5, 25);
 
 -- Bob DSA
 INSERT INTO marks (student_id, subject_id, exam_type, marks, total_marks) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000002', 'sub0e0a0-0000-0000-0000-000000000001', 'Internal 1', 18.0, 25),
-('s0e0a0e0-0000-0000-0000-000000000002', 'sub0e0a0-0000-0000-0000-000000000001', 'Internal 2', 20.0, 25);
+('c0e0a0e0-0000-0000-0000-000000000002', 'cb00a0e0-0000-0000-0000-000000000001', 'Internal 1', 18.0, 25),
+('c0e0a0e0-0000-0000-0000-000000000002', 'cb00a0e0-0000-0000-0000-000000000001', 'Internal 2', 20.0, 25);
 
 -- Charlie DSP
 INSERT INTO marks (student_id, subject_id, exam_type, marks, total_marks) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000003', 'sub0e0a0-0000-0000-0000-000000000003', 'Internal 1', 24.0, 25);
+('c0e0a0e0-0000-0000-0000-000000000003', 'cb00a0e0-0000-0000-0000-000000000003', 'Internal 1', 24.0, 25);
 
 -- 9. Insert Leave Requests
 INSERT INTO leave_requests (student_id, reason, from_date, to_date, status, approved_by) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'Family emergency and wedding to attend.', '2026-06-10', '2026-06-12', 'pending', NULL),
-('s0e0a0e0-0000-0000-0000-000000000002', 'Recovering from fever and doctor advised rest.', '2026-05-20', '2026-05-22', 'approved', 'f0e0a0e0-0000-0000-0000-000000000001');
+('c0e0a0e0-0000-0000-0000-000000000001', 'Family emergency and wedding to attend.', '2026-06-10', '2026-06-12', 'pending', NULL),
+('c0e0a0e0-0000-0000-0000-000000000002', 'Recovering from fever and doctor advised rest.', '2026-05-20', '2026-05-22', 'approved', 'f0e0a0e0-0000-0000-0000-000000000001');
 
 -- 10. Insert Announcements
 INSERT INTO announcements (title, description, department_id, created_by) VALUES 
@@ -125,9 +125,9 @@ INSERT INTO announcements (title, description, department_id, created_by) VALUES
 
 -- 11. Study Materials
 INSERT INTO study_materials (title, file_url, subject_id, uploaded_by) VALUES 
-('Lecture 1 - Introduction to Trees & Graphs', 'https://supabase.co/storage/v1/object/public/materials/lecture1_dsa.pdf', 'sub0e0a0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000003'),
-('Lecture 2 - Sorting and Hashing', 'https://supabase.co/storage/v1/object/public/materials/sorting_hashing.pdf', 'sub0e0a0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000003'),
-('Relational Algebra & Normalization notes', 'https://supabase.co/storage/v1/object/public/materials/normalization.pdf', 'sub0e0a0-0000-0000-0000-000000000002', 'f0e0a0e0-0000-0000-0000-000000000004');
+('Lecture 1 - Introduction to Trees & Graphs', 'https://supabase.co/storage/v1/object/public/materials/lecture1_dsa.pdf', 'cb00a0e0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000003'),
+('Lecture 2 - Sorting and Hashing', 'https://supabase.co/storage/v1/object/public/materials/sorting_hashing.pdf', 'cb00a0e0-0000-0000-0000-000000000001', 'f0e0a0e0-0000-0000-0000-000000000003'),
+('Relational Algebra & Normalization notes', 'https://supabase.co/storage/v1/object/public/materials/normalization.pdf', 'cb00a0e0-0000-0000-0000-000000000002', 'f0e0a0e0-0000-0000-0000-000000000004');
 
 -- 12. Events
 INSERT INTO events (id, title, description, event_type, event_date, location, organizer, registration_deadline) VALUES 
@@ -136,23 +136,23 @@ INSERT INTO events (id, title, description, event_type, event_date, location, or
 
 -- 13. Event Registrations
 INSERT INTO event_registrations (event_id, student_id) VALUES 
-('e0e0a0e0-0000-0000-0000-000000000001', 's0e0a0e0-0000-0000-0000-000000000001'),
-('e0e0a0e0-0000-0000-0000-000000000001', 's0e0a0e0-0000-0000-0000-000000000002');
+('e0e0a0e0-0000-0000-0000-000000000001', 'c0e0a0e0-0000-0000-0000-000000000001'),
+('e0e0a0e0-0000-0000-0000-000000000001', 'c0e0a0e0-0000-0000-0000-000000000002');
 
 -- 14. Placements
 INSERT INTO placements (id, company_name, role, package, eligibility, deadline) VALUES 
-('pl0e0a0e-0000-0000-0000-000000000001', 'Stripe', 'Software Engineer (Frontend/Fullstack)', '$120,000 / Year', 'Minimum CGPA 8.0, CSE and ECE branches only', '2026-06-18 12:00:00+00'),
-('pl0e0a0e-0000-0000-0000-000000000002', 'Tesla', 'Embedded Systems Intern', '$45 / Hour', 'ECE and EEE students. Basic C/C++ knowledge required', '2026-06-25 18:00:00+00');
+('ba00a0e0-0000-0000-0000-000000000001', 'Stripe', 'Software Engineer (Frontend/Fullstack)', '$120,000 / Year', 'Minimum CGPA 8.0, CSE and ECE branches only', '2026-06-18 12:00:00+00'),
+('ba00a0e0-0000-0000-0000-000000000002', 'Tesla', 'Embedded Systems Intern', '$45 / Hour', 'ECE and EEE students. Basic C/C++ knowledge required', '2026-06-25 18:00:00+00');
 
 -- 15. Placement Applications
 INSERT INTO placement_applications (placement_id, student_id, resume_url, status) VALUES 
-('pl0e0a0e-0000-0000-0000-000000000001', 's0e0a0e0-0000-0000-0000-000000000001', 'https://supabase.co/storage/v1/object/public/resumes/alice_resume.pdf', 'shortlisted');
+('ba00a0e0-0000-0000-0000-000000000001', 'c0e0a0e0-0000-0000-0000-000000000001', 'https://supabase.co/storage/v1/object/public/resumes/alice_resume.pdf', 'shortlisted');
 
 -- 16. Digital ID Cards
 INSERT INTO digital_id_cards (student_id, qr_code, verification_token) VALUES 
-('s0e0a0e0-0000-0000-0000-000000000001', 'https://college.edu/verify/token_alice_123', 'token_alice_123'),
-('s0e0a0e0-0000-0000-0000-000000000002', 'https://college.edu/verify/token_bob_456', 'token_bob_456'),
-('s0e0a0e0-0000-0000-0000-000000000003', 'https://college.edu/verify/token_charlie_789', 'token_charlie_789');
+('c0e0a0e0-0000-0000-0000-000000000001', 'https://college.edu/verify/token_alice_123', 'token_alice_123'),
+('c0e0a0e0-0000-0000-0000-000000000002', 'https://college.edu/verify/token_bob_456', 'token_bob_456'),
+('c0e0a0e0-0000-0000-0000-000000000003', 'https://college.edu/verify/token_charlie_789', 'token_charlie_789');
 
 -- 17. Activity Logs
 INSERT INTO activity_logs (user_id, action, details) VALUES 
