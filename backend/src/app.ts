@@ -14,6 +14,14 @@ app.use(express.urlencoded({ extended: true }));
 // Routing API
 app.use('/api', apiRouter);
 
+// Health check route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    message: 'Smart College Management System API is running'
+  });
+});
+
 // Fallback 404 Route
 app.use('*', (req, res, next) => {
   next(new NotFoundError(`Requested route ${req.originalUrl} not found`));
